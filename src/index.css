@@ -1,56 +1,68 @@
-/* Reset some default styles */
+/* Reset */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
   
+  /* Body styled like wallet modal */
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    padding: 20px;
+    background-color: #e6f0ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
   }
   
-  h1 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
+  /* Compact, centered app container */
   .app-container {
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 30px;
+    width: 380px;
+    padding: 24px;
     background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
   }
   
-  section {
-    margin-bottom: 30px;
-  }
-  
-  button {
-    background-color: #007bff;
+  /* Wallet header */
+  .header {
+    background-color: #00A36C; /* Lloyds Green */
     color: white;
-    border: none;
-    padding: 10px 16px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1rem;
-    margin-top: 10px;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 1.3rem;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    font-weight: bold;
   }
   
-  button:hover {
-    background-color: #0056b3;
-  }
-  
+  /* Input and button styling */
   input {
     width: 100%;
     padding: 10px;
-    margin-top: 6px;
+    margin-top: 8px;
     margin-bottom: 16px;
-    border-radius: 6px;
+    border-radius: 8px;
     border: 1px solid #ccc;
+    font-size: 0.95rem;
+  }
+  
+  button {
+    background-color: #00A36C;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
     font-size: 1rem;
+  }
+  
+  button:hover {
+    background-color: #007a59;
+  }
+  
+  /* Section spacing */
+  section {
+    margin-bottom: 24px;
   }
